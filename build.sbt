@@ -9,7 +9,7 @@ resolvers += "Spark Packages Repo" at "http://dl.bintray.com/spark-packages/mave
 resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 resolvers += "Repo at github.com/ankurdave/maven-repo" at "https://github.com/ankurdave/maven-repo/raw/master"
 
-lazy val streaming = (project in file("."))
+lazy val sparkScalaTemplate = (project in file("."))
   .settings(name := "SparkAppName-ToBeReplaced")
   .settings(globalSettings:_*)
   .settings(libraryDependencies ++= dependencies)
